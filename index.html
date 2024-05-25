@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stefania Fiorucci Software Engineer CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container"><br></div>
+        <!-- Search Form using GET -->
+        <form action="/search" method="GET" class="mb-4">
+            <div class="input-group">
+                <input type="text" id="search" name="query" class="form-control" placeholder="Search...">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </div>
+        </form>
+        <!-- CV -->
+        <h1 class="mt-4">Stefania Fiorucci</h1>
+        <div class="mt-4">
+            <h2><b>Bio</b></h2>
+            <p>Aspiring Software Engineer with a passion for coding and problem-solving, eager to kickstart a career in App/Games development. Armed with foundational knowledge gained through education and practical projects, I am poised to contribute fresh perspectives and strong work ethic to innovative development teams.</p>
+        </div>
+
+        <div class="mt-4">
+            <h2><b>Contact details</b></h2>
+            <ul class="list-unstyled centered-list">
+                <li><u>Mobile:</u> 07759089847</li>
+                <li><u>Email:</u> s.fiorucci.art@gmail.com</li>
+                <li><u>Location:</u> London</li>
+                <li><u>LinkedIn:</u> <a href="https://github.com/Tsukistef">Link</a></li>
+                <li><u>GitHub:</u> <a href="https://www.linkedin.com/in/stefania-fiorucci-henriques-3723441a4/">Link</a></li>
+            </ul>
+        </div>
+
+        <div class="mt-4">
+            <img src="images/cvimage.jpg" class="img-fluid cv-image" alt="CV Image">
+        </div>
+
+        <div class="mt-4">
+            <h2><b>Skills and competencies</b></h2>
+            <ul class="centered-list">
+                <li>Project management</li>
+                <li>Problem-solving skills</li>
+                <li>Teamwork</li>
+                <li>Time management</li>
+                <li>IT Knowledge</li>
+                <li>Effective communication</li>
+                <li>Critical thinking</li>
+                <li>Responsive to feedback</li>
+            </ul>
+        </div>
+
+        <div class="mt-4">
+            <h2><b>Education</b></h2>
+            <div class="centered-list">
+                <div class="mt-3">
+                    <h3><b>2024 - HyperionDev bootcamp</b></h3>
+                    <ul class="list-unstyled">
+                        <li>Software Engineering Bootcamp</li>
+                        <li>Average score: 99</li>
+                    </ul>
+                </div>
+
+                <div class="mt-3">
+                    <h3><b>2019-2022 University of the Arts of London</b></h3>
+                    <ul class="list-unstyled">
+                        <li>Bachelor of Arts - Game Art</li>
+                        <li>First Class Honors</li>
+                    </ul>
+                </div>
+
+                <div class="mt-3">
+                    <h3><b>2010-2015 Liceo Artistico Catalano</b></h3>
+                    <ul class="list-unstyled">
+                        <li>Diploma of fine arts</li>
+                        <li>Grade 86/100</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <h2><b>Experience</b></h2>
+            <div class="centered-list">
+                <div class="mt-3">
+                    <h3><b>HyperionDev Software Engineering bootcamp<br>03/2024 - to present</b></h3>
+                    <h4>Software Engineer</h4>
+                    <ul class="list-unstyled">
+                        <li>The bootcamp aims to introduce and develop Python and Software development knowledge by completing practical activities.</li>
+                        <li>Achieved an overall grade average of 99% for bootcamp tasks.</li>
+                        <li>Mastered Python programming within 6 months, enhancing coding skills and efficiency in data manipulation and analysis.</li>
+                        <li>Acquired hands-on experience with data structures, algorithms, object-oriented programming, database management, and software design.</li>
+                        <li>Skills Acquired:
+                            <div class="skills-acquired">
+                                <ol>
+                                    <li>Software development in Python and SQL</li>
+                                    <li>Object-oriented programming</li>
+                                    <li>Systems analysis</li>
+                                    <li>Systems design</li>
+                                    <li>Source version control.</li>
+                                </ol>
+                            </div>   
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mt-3">
+                    <h3><b>CCS Collect<br>02/2024 - to present</b></h3>
+                    <h4>Customer agent/ Debt collector</h4>
+                    <ul class="list-unstyled">
+                        <li>Proficient in negotiation and empathetic
+                            <li>Proficient in negotiation and empathetic communication, committed to resolving financial challenges with compassion and professionalism.</li>
+                            <li>Skilled in engaging with customers, crafting effective repayment solutions, and ensuring compliance with industry standards.</li>
+                            <li>Eager to contribute expertise in debt recovery to drive positive outcomes.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Contact Form using POST -->
+            <div class="mt-4">
+                <h2>Contact me</h2>
+                <form action="/contact" method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name:</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message:</label>
+                        <textarea id="message" name="message" class="form-control" rows="4" placeholder="Your message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+    
+        </div>
+    
+    </body>
+    
+    </html>
+    

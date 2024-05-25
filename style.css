@@ -1,0 +1,57 @@
+/* Custom CSS for specific styles */
+/* Centered list with left-aligned text */
+.centered-list {
+    text-align: center;
+    margin-left: auto; /* Align the margin to the left */
+    margin-right: auto; /* Align the margin to the right */
+    max-width: 600px; /* Adjust the max-width as needed */
+}
+
+/* Override text alignment for list items */
+.centered-list li {
+    padding-left: 150px;
+    padding-right: 50px;
+    text-align: left !important; /* Ensure left alignment for list items */
+}
+
+.skills-acquired li {
+    padding-left: 50px;
+    padding-right: 10px;
+    text-align: left !important; /* Ensure left alignment for list items */
+}
+
+/* Additional styling */
+body {
+    text-align: center;
+    background-color: lightcyan;
+}
+
+h2 {
+    background-color: lightblue;
+}
+
+h4 {
+    font-style: italic;
+}
+
+button:hover {
+    color: white;
+    background-color: lightskyblue;
+}
+
+/* Ensures all list items are aligned to the left */
+ul, ol {
+    list-style-position: inside;
+    text-align: left;
+}
+
+li li {
+    list-style-type: circle;
+    text-align: left;
+}
+
+.cv-image {
+    max-width: 100%;
+    max-height: 500px; /* or any desired maximum height */
+    height: auto;
+}
